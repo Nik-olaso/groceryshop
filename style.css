@@ -1,4 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 html {
   height: 100%;
   width: 100%;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.products__card {
+  width: 15%;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid grey;
+  height: 300px;
+  position: relative;
+}
+
+.card__image-block {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.card__image {
+  height: 100%;
+}
+
+.card__name {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.card__meta {
+  font-size: 14px;
+  color: #a6a6a6;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__description {
+  padding: 10px;
+  height: 50%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.card__cost {
+  position: absolute;
+  bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+}
+
+.card__value {
+  display: flex;
+  align-items: center;
+}
+
+.card__rating::after {
+  content: '';
+  background-image: url(pictures/star.svg);
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.card__cost::after {
+  content: '';
+  background-image: url(pictures/rub.svg);
+  background-size: contain;
+  width: 20px;
+  height: 20px; 
+  display: block; 
 }
